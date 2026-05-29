@@ -391,23 +391,26 @@ a {
    MOBILE
 ========================= */
 
-@media (max-width: 767px) {
+@media (max-width: 667px) {
 
     .header {
         flex-direction: column;
         padding: 0;
     }
+.nav-links {
+    width: 100%;
+    display: flex;
+     list-style: none;
+    justify-content: space-around;
+    align-items: center;
+        margin-right: 80px;
 
-    .nav-links {
-        width: 100%;
-        gap: 0;
-    }
+}
 
     .nav-links li {
-        width: 50%;
-        text-align: center;
-    }
-
+    flex: 1;
+    text-align: center;
+}
     .nav-links a {
         border-top: none;
         border-bottom: 2px solid var(--grey);
@@ -464,12 +467,13 @@ a {
 
     .hebergements {
         background: white;
+      
     }
 
     .hebergements .card,
     .activity-card {
         width: 100%;
-    }
+     }
 
     .activities-container {
         flex-direction: column;
